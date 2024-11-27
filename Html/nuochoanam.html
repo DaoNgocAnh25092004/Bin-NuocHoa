@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin Store</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="icon" href="../assets/image/logo/logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="../assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/reponsive.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <header id="header">
+            <nav class="header__navbar">
+                <div class="header__navbar-logo">
+                    <ul class="header__navbar " id="logo">
+                        <li class="header__btn">
+                            <i class="ti-align-justify"></i>
+                        </li>
+                        <li class="header__btn--logo">Bin Store</li>
+                    </ul>
+                </div>
+                <div class="header__menu-item">
+                    <div class="header__menu-close">
+                        <i class="ti-close"></i>
+                    </div>
+                    <ul class="header__navbar header__navbar-item--menu">
+                        <li class="header__menu-item">
+                            <a href="../Html/index.html" class="header__menu-item-link">Trang
+                                chủ</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-item-link header__menu-item--underlined ">Nước hoa nam</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="../Html/nuochoanu.html" class="header__menu-item-link">Nước hoa nữ</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="../Html/sitemap.html" class="header__menu-item-link">Sitemap</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="../Html/gioithieu.html" class="header__menu-item-link">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__menu-icon">
+                    <ul class="header__navbar header__navbar-menu-icon">
+                        <li class="header__navbar-icon">
+                            <a href="" class="header__navbar-icon--link">
+                                <i class="ti-search"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-icon">
+                            <span class="header__navbar-icon--link---user">
+                                <i class="ti-user"></i>
+                            </span>
+                            <div class="header__navbar-icon icon-user">
+                                <a href="../Html/login.html" class="header__navbar-icon--user user-1">Đăng Nhập</a>
+                                <span class="header__navbar-icon--separator">/</span>
+                                <a href="../Html/signup.html" class="header__navbar-icon--user">Đăng Ký</a>
+                            </div>
+                            <div class="log--out hide"><i class="fa-solid fa-right-from-bracket"></i></div>
+
+                        </li>
+
+                        <li class="header__navbar-icon">
+                            <a class="header__navbar-icon--link">
+                                <i class="ti-shopping-cart-full header__navbar-icon--link---cart"></i>
+                                <p class="header__navbar-icon--link---quantity_cart">0</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav__overlay1"></div>
+            <div class="nav__overlay2"></div>
+        </header>
+        <div class="showCart">
+            <div class="showCart-header__cover">
+                <div class="showCart-header">
+                    <div>
+                        <h2><span>0</span> sản phẩm</h2>
+                    </div>
+                    <div>
+                        <h1>Giỏ Hàng</h1>
+                    </div>
+                    <div>
+                        <h2 class="showCart-header_close">Đóng</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showCart-none">
+                <i class="ti-shopping-cart"></i>
+                <p>Hiện chưa có sản phẩm</p>
+            </div>
+            <div id="mycart">
+
+            </div>
+            <div class="showCart-footer">
+                <div class="showCart-footer--into__money">
+                    <h2>TỔNG TIỀN:</h2>
+                    <p>0₫</p>
+                </div>
+                <div class="showCart-footer--button">
+                    <button>XEM GIỎ HÀNG</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- màn hình mờ click giỏ hàng -->
+        <div class="cart-blurred__screen"></div>
+
+        <div class="image__slider">
+            <div class="image__slider-item">
+                <div class=image__slider-item__img>
+                    <img src="../assets/image/img_slider/1.webp" alt="">
+                </div>
+            </div>
+            <div class="image__slider-item">
+                <div class=image__slider-item__img>
+                    <img src="../assets/image/img_slider/3.webp" alt="">
+                </div>
+            </div>
+            <div class="image__slider-item">
+                <div class=image__slider-item__img>
+                    <img src="../assets/image/img_slider/5.webp" alt="">
+                </div>
+            </div>
+            <div class="image__slider-item">
+                <div class=image__slider-item__img>
+                    <img src="../assets/image/img_slider/6.webp" alt="">
+                </div>
+            </div>
+            <div class="image__slider-item">
+                <div class=image__slider-item__img>
+                    <img src="../assets/image/img_slider/7.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="content__selling-product">
+            <h1 class="">Sản Phẩm Nước Hoa Nam Của Bin Store</h1>
+            <div class="content__product grid wide ">
+                <div class="content__product-row product-row1 row">
+                    <div class="col l-3 m-4 c-6">
+                        <div class="item__shirt" data-product-id="1">
+                            <img src="../assets/image/men's perfume/1.webp" alt="" class="normal-image">
+                            <img src="../assets/image/men's perfume/1_1.webp" alt="" class="hover-image">
+                            <p class="content__product-name">Armaf Club de Nuit Intense Man</p>
+                            <div class="content__product-price">
+                                <p class="content__product-pricereal">995,000₫</p>
+                                <p class="content__product-discount">1,180,000₫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="item__shirt" data-product-id="2">
+                            <img src="../assets/image/men's perfume/2.webp " alt="" class="normal-image">
+                            <img src="../assets/image/men's perfume/2_2.webp " alt="" class="hover-image">
+                            <p class="content__product-name">Versace Eros For Men</p>
+                            <div class="content__product-price">
+                                <p class="content__product-pricereal">820,000₫</p>
+                                <p class="content__product-discount">1,180,000₫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="item__shirt" data-product-id="3">
+                            <img src="../assets/image/men's perfume/3.webp" alt="" class="normal-image">
+                            <img src="../assets/image/men's perfume/3_3.webp" alt="" class="hover-image">
+                            <p class="content__product-name">CHRISTIAN DIOR</p>
+                            <div class="content__product-price">
+                                <p class="content__product-pricereal">1,200,000₫</p>
+                                <p class="content__product-discount">1,280,000₫</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="item__shirt" data-product-id="4">
+                            <img src="../assets/image/men's perfume/4.webp" alt="" class="normal-image">
+                            <img src="../assets/image/men's perfume/4_4.webp" alt="" class="hover-image">
+                            <p class="content__product-name">VERSACE</p>
+                            <div class="content__product-price">
+                                <p class="content__product-pricereal">1,120,000₫</p>
+                                <p class="content__product-discount">1,280,000₫</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="item__shirt" data-product-id="5">
+                            <img src="../assets/image/men's perfume/5.webp" alt="" class="normal-image">
+                            <img src="../assets/image/men's perfume/5_5.webp" alt="" class="hover-image">
+                            <p class="content__product-name">GIORGIO ARMANI</p>
+                            <div class="content__product-price">
+                                <p class="content__product-pricereal">1,500,000₫</p>
+                                <p class="content__product-discount">1,700,000₫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="item__shirt" data-product-id="6">
+                            <img src="../assets/image/men's perfume/6.jpg" alt="" class="normal-image">
+                            <img src="../assets/image/men's perfume/6_6.webp" alt="" class="hover-image">
+                            <p class="content__product-name">MONTBLANC</p>
+                            <div class="content__product-price">
+                                <p class="content__product-pricereal">1,300,000₫</p>
+                                <p class="content__product-discount">1,380,000₫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="item__shirt" data-product-id="7">
+                            <img src="../assets/image/men's perfume/7.webp" alt="" class="normal-image">
+                            <img src="../assets/image/men's perfume/7_7.webp" alt="" class="hover-image">
+                            <p class="content__product-name">DOLCE & GABBANA</p>
+                            <div class="content__product-price">
+                                <p class="content__product-pricereal">1,300,000₫</p>
+                                <p class="content__product-discount">1,380,000₫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="item__shirt" data-product-id="8">
+                            <img src="../assets/image/men's perfume/8.webp" alt="" class="normal-image">
+                            <img src="../assets/image/men's perfume/8_8.webp" alt="" class="hover-image">
+                            <p class="content__product-name">CALVIN KLEIN</p>
+                            <div class="content__product-price">
+                                <p class="content__product-pricereal">1,300,000₫</p>
+                                <p class="content__product-discount">1,480,000₫</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="symbol">
+            <div class="symbol__box">
+                <img src="../assets/image/symbol/symbol2.png" alt="">
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="footer__header">
+                <div class="footer__NameOrigin footer__touch-click">
+                    <div class="footer__NameOrigin--name">
+                        <i class="ti-angle-down footer__header-on--menu"></i>
+                        <i class="ti-angle-up footer__header-close--menu"></i>
+                        <H1>Lịch Sử Tên</H1>
+                    </div>
+                    <div class="footer__header-menu--item">
+                        <p class="footer__NameOrigin-content">Cái tên Bin Store được tạo ra rất ngẫu hứng,
+                            xuất phát từ “Chuỗi ngày u buồn về sự nghiệp,
+                            tương lai trong quá khứ của chính mình”,
+                            theo lời chia sẻ của Bá Sơn founder.</p>
+                    </div>
+                </div>
+                <div class="footer__addres footer__touch-click">
+                    <div class="footer__addre-name">
+                        <i class="ti-angle-down footer__header-on--menu"></i>
+                        <i class="ti-angle-up footer__header-close--menu"></i>
+                        <h1>Địa chỉ</h1>
+                    </div>
+                    <div class="footer__addres-item footer__header-menu--item">
+                        <h2>Sài gòn</h2>
+                        <p>43 Huỳnh Văn Bánh P.17 Q.Phú Nhuận 1041 Luỹ Bán Bích P.Tân Thành Q.Tân Phú</p>
+                        <h2>Điện Thoại</h2>
+                        <p class="footer__addres-NumberPhone">0986966745</p>
+                        <h2>Email</h2>
+                        <p class="footer__addres-email">Bason812004@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer__support footer__touch-click">
+                    <div class="footer__support-name">
+                        <i class="ti-angle-down footer__header-on--menu"></i>
+                        <i class="ti-angle-up footer__header-close--menu"></i>
+                        <h1>Hỗ Trợ Khách Hàng</h1>
+                    </div>
+                    <div class="footer__header-menu--item">
+                        <ul>
+                            <li>Giới thiệu Bin Store</li>
+                            <li>Hệ Thống Cửa Hàng</li>
+                            <li>Hướng Dẫn Đặt Hàng</li>
+                            <li>Chính Sách Và Quy Định</li>
+                            <li>Chính Sách Bảo Mật</li>
+                            <li>Thông tin sở hữu</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer__TakeCareOf footer__touch-click">
+                    <div class="footer__TakeCareOf-name">
+                        <i class="ti-angle-down footer__header-on--menu "></i>
+                        <i class="ti-angle-up footer__header-close--menu"></i>
+                        <h1>Chăm Sóc Khách Hàng</h1>
+                    </div>
+                    <div class="footer__header-menu--item">
+                        <div class="footer__contact-info">
+                            <i class="ti-headphone-alt"></i>
+                            <h2 class="footer__NumberPhone">0986966745</h2>
+                        </div>
+                        <h2 class="footer__email">Bason812004@gmail.com</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__SocialNetwork">
+                <p>Copyright © 2023 Bin Store VIETNAM. Powered by Bá Sơn entertaiment</p>
+                <div class="footer__SocialNetwork-icon">
+                    <i class="ti-facebook"></i>
+                    <i class="ti-instagram"></i>
+                    <i class="ti-youtube"></i>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../Js/main.js"></script>
+    <script src="../Js/hiengiohang.js"></script>
+    <script src="../Js/chuyentrangthongtin.js"></script>
+    <script src="../Js/shownamelogin.js"></script>
+
+</body>
+
+</html>

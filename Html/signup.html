@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin Store</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="icon" href="../assets/image/logo/logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="../assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/reponsive.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../Library/Bootstrap/bootstrap.min.css">
+    <script src="../Library/Bootstrap/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background: url(../assets/image/background/1.jpg) no-repeat center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .over__lay--login {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: -99;
+        }
+
+        .form-control {
+            height: 50px !important;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 60;
+        }
+
+        .width-30 {
+            width: 30%;
+            font-size: 18px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .container__login form>div>div>span {
+            font-size: 15px;
+            position: absolute;
+        }
+
+        .card__login {
+            height: 650px;
+            width: 750px;
+
+        }
+
+        .card__login::before {
+            height: 660px;
+            width: 760px;
+
+        }
+
+        .card__login:hover::before {
+            transform: rotate(-90deg) scaleX(0.87) scaleY(1.15);
+        }
+        @media only screen and (max-width: 740px) {
+            .container__login {
+                transform: scale(0.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="over__lay--login"></div>
+
+    <div class="container__login">
+        <div class="card__login">
+            <form action="">
+                <h1 style="text-align: center;" class="my-5">Sign Up</h1>
+                <div class="mb-3 d-flex">
+                    <label for="uname" class=" width-30">Username</label>
+                    <div class="w-100">
+                        <input type="text" class="form-control" placeholder="username" id="username">
+                        <span class="err-username" style="color: red;"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3 my-5 d-flex">
+                    <label for="uname" class=" width-30">Password</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form-control" id="password" placeholder="password">
+                        <span class="err-password" style="color: red;"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3 my-5 d-flex">
+                    <label for="uname" class=" width-30">Confirm password</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form-control" id="confirm-password" placeholder="confirm password">
+                        <span class="err-confirm-password" style="color: red;"></span>
+                    </div>
+                </div>
+                <div class="mb-3 my-5 d-flex">
+                    <label for="uname" class="width-30">Phone</label>
+                    <div class="w-100">
+                        <input type="text" class="form-control" id="dienthoai" placeholder="textDT">
+                        <span class="err-dienthoai" style="color: red;"></span>
+                    </div>
+                </div>
+                <div class="mb-3 my-5 d-flex">
+                    <label for="uname" class="width-30">Email</label>
+                    <div class="w-100">
+                        <input type="text" class="form-control" id="email" placeholder="textEmail">
+                        <span class="err-email" style="color: red;"></span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center gap-5 my-5">
+                    <button type="button" class="btn-53 btn--login">
+                        <div class="original">Sign Up</div>
+                        <div class="letters">
+
+                            <span>S</span>
+                            <span>I</span>
+                            <span>G</span>
+                            <span>N</span>
+                            <span>&nbsp;</span>
+                            <span>U</span>
+                            <span>P</span>
+                        </div>
+                    </button>
+                </div>
+                <!-- Phần footer -->
+                <p class="my-4">
+                <h4 class="text-center">
+                    Đã có tài khoản? <a href="../Html/login.html">Đăng nhập</a>
+                </h4>
+                </p>
+                <p class="mt-4 text-center">
+                    <a class="d-block mx-auto" href="../Html/index.html"> &#8701; Quay về trang chủ</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../Js/signup.js"></script>
+</body>
+
+</html>

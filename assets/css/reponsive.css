@@ -37,7 +37,6 @@
     }
 }
 
-
 /* Ẩn nút menu trên màn hình lớn hơn 740px */
 @media only screen and (min-width: 741px) {
     .header__btn i{
@@ -49,7 +48,6 @@
        
     
 }
-
 /* Hiển thị nút menu trên màn hình nhỏ hơn hoặc bằng 740px */
 @media only screen and (max-width: 740px) {
     /* Header */
@@ -72,11 +70,11 @@
     .header__navbar-item--menu{
         display: none;
         background-color: #fff;
-        width: 100vh;
+        width: 400px;
         height: 100vh;
         margin-top: -25px;
         margin-left: -180px;
-        z-index: 2;
+        z-index: 3;
         animation: anmtMenu 1s ease ;
     }
     @keyframes anmtMenu {
@@ -86,12 +84,18 @@
             transform: translateX(0);
         }
     }
+    .header__menu-icon {
+        margin-left: -50px;
+    }
     .header__menu-item { 
         display: flex;
         font-size: 1.9rem;
         margin-top: -50px;
         padding-block: 60px;
 
+    }
+    .image__slider-item__img {
+        height: auto;
     }
     .header__navbar-icon {
         margin-left: -37px;
@@ -135,13 +139,17 @@
         
     }
     /* symbol logo trang chính */
+    #symbol {
+        position: relative;
+        height: 200px;
+    }
     .symbol__title{
         font-size: 20px;
         padding: 10px;
     }
-    #symbol__logo > img{
-        width: 400px;
-        height: 14  0px;
+    .symbol__box {
+        padding: 0;
+        width: 350px;
     }
     /* Phần sản Phẩm bán chạy */
     #content__selling-product h1 {
@@ -312,9 +320,8 @@
     }
     .content__information-item--secondary__image {
         display: flex;
-    }
-    .content__information-item--secondary__image {
         height: 130px;
+        margin-left: 15px;
     }
     .content__information-item--secondary__image---item{
         margin-left: 10px;
@@ -322,13 +329,13 @@
     .content__information-item--secondary__image---item img {
         height: 100px;
         width: 100px;
-        margin: 0 10px;
+        margin: 0 5px;
     }
     .content__information-item--title { 
         line-height: 25px;
     }
     .content__information-item--buy---add {
-        width: 200px;
+        width: 190px;
         margin: 20px 0 0 10px;
     }
     .content__information-item--detail p {
@@ -352,6 +359,8 @@
 
     .content__information-item--buy {
         position: fixed;
+        display: flex;
+        justify-content: space-around;
         bottom: 0;
         background: #fff;
         padding: 0;
@@ -361,6 +370,9 @@
         z-index: 1;
         padding-bottom: 20px;
         box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.5);
+    }
+    .content__information-item--minus {
+        margin-left: 0;
     }
     .content__information-item--buy__show {
         display: block;
@@ -382,6 +394,9 @@
     .showCart__info-footer--button button {
         border: 1px solid #000;
         padding: 5px 11px;
+    }
+    .showCart__info-footer--button {
+        margin-right: 104px;
     }
     .header__navbar-icon--link---cart {
         margin-left: 30px;
@@ -419,10 +434,23 @@
         height: 85px;
         width: 85px;
     }
-    .showCart__info-header i {
-        font-size: 17px;
-        margin-left: 270px;
+    .showCart__info-header {
+        position: relative;
     }
+    .showCart__info-header i {
+        position: absolute;
+        font-size: 17px;
+        right: 0;
+        
+    }
+    .showCart__info-footer {
+        position: relative;
+    }
+    /* .showCart__info-footer--price {
+        /* position: absolute; 
+        right: 0;
+        margin: 10px;
+    } */
     .showCart__info-header p {
         line-height: 15px;
     }
@@ -536,5 +564,25 @@
     .content__buy-info {
         margin-bottom: 40px;
         border: none;
+    }
+    /* TRang thông tin */
+    .container__controduce {
+        margin-top: 100px;
+        padding: 0 10px;
+    }
+    .container__controduce h1 {
+        font-size: 25px;
+    }
+    .container__controduce--img {
+        margin: 30px 0;
+    }
+    #sitemap   {
+        margin: 100px 0;
+
+    }
+
+    /* Trang login */
+    .container__login {
+        transform: scale(0.6);
     }
 }

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin Store</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="icon" href="../assets/image/logo/logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="../assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/reponsive.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <header id="header">
+            <nav class="header__navbar">
+                <div class="header__navbar-logo">
+                    <ul class="header__navbar " id="logo">
+                        <li class="header__btn">
+                            <i class="ti-align-justify"></i>
+                        </li>
+                        <li class="header__btn--logo">Bin Store</li>
+                    </ul>
+                </div>
+                <div class="header__menu-item">
+                    <div class="header__menu-close">
+                        <i class="ti-close"></i>
+                    </div>
+                    <ul class="header__navbar header__navbar-item--menu">
+                        <li class="header__menu-item">
+                            <a href="../Html/index.html" class="header__menu-item-link  ">Trang
+                                chủ</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="../Html/nuochoanam.html" class="header__menu-item-link ">Nước hoa nam</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="../Html/nuochoanu.html" class="header__menu-item-link">Nước hoa nữ</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="../Html/sitemap.html" class="header__menu-item-link">Sitemap</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-item-link  header__menu-item--underlined">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__menu-icon">
+                    <ul class="header__navbar header__navbar-menu-icon">
+                        <li class="header__navbar-icon">
+                                <i class="ti-search"></i>
+                                <input type="text" class="search__prefume">
+                        </li>
+                        <li class="header__navbar-icon">
+                            <span class="header__navbar-icon--link---user">
+                                <i class="ti-user"></i>
+                            </span>
+                            <div class="header__navbar-icon icon-user">
+                                <a href="../Html/login.html" class="header__navbar-icon--user user-1">Đăng Nhập</a>
+                                <span class="header__navbar-icon--separator">/</span>
+                                <a href="../Html/signup.html" class="header__navbar-icon--user">Đăng Ký</a>
+                            </div>
+                            <div class="log--out hide"><i class="fa-solid fa-right-from-bracket"></i></div>
+
+                        </li>
+
+                        <li class="header__navbar-icon">
+                            <a class="header__navbar-icon--link">
+                                <i class="ti-shopping-cart-full header__navbar-icon--link---cart"></i>
+                                <p class="header__navbar-icon--link---quantity_cart">0</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav__overlay1"></div>
+            <div class="nav__overlay2"></div>
+        </header>
+        <div class="showCart">
+            <div class="showCart-header__cover">
+                <div class="showCart-header">
+                    <div>
+                        <h2><span>0</span> sản phẩm</h2>
+                    </div>
+                    <div>
+                        <h1>Giỏ Hàng</h1>
+                    </div>
+                    <div>
+                        <h2 class="showCart-header_close">Đóng</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showCart-none">
+                <i class="ti-shopping-cart"></i>
+                <p>Hiện chưa có sản phẩm</p>
+            </div>
+            <div id="mycart">
+
+            </div>
+            <div class="showCart-footer">
+                <div class="showCart-footer--into__money">
+                    <h2>TỔNG TIỀN:</h2>
+                    <p>0₫</p>
+                </div>
+                <div class="showCart-footer--button">
+                    <button>XEM GIỎ HÀNG</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- màn hình mờ click giỏ hàng -->
+        <div class="cart-blurred__screen"></div>
+
+        <div class="container__controduce">
+            <h1>Thành tích nổi bật</h1>
+            <p>Sau 45 năm hình thành và phát triển, với tư duy sáng tạo, mạnh dạn đổi mới và nỗ lực không ngừng, Vinamilk đã trở thành một trong những doanh nghiệp hàng đầu của Việt Nam, đóng góp tích cực cho sự phát triển của đất nước nói chung và ngành sữa nói riêng, đưa thương hiệu sữa Việt vươn lên các vị trí cao trên bản đồ ngành sữa toàn cầu. Với những thành tích nổi bật đó, Công ty đã vinh dự nhận được các Danh hiệu và Giải thưởng cao quý:</p>
+            <div class="container__controduce--btn">
+                <button class="btn-gioithieu1">
+                    Thành tích trong nước
+                  </button>
+                  <button class="btn-gioithieu2">
+                    <span class="btn__introduce--transition"></span>
+                    <span class="btn__introduce--gradient"></span>
+                    <span class="btn__introduce--label">Thành tích quốc tế</span>
+                  </button>
+            </div>
+            <div class="container__controduce--img">
+                <img src="../assets/image/controduce/1.png" alt="">
+            </div>
+        </div>
+       
+        
+
+
+
+        <footer id="footer">
+            <div class="footer__header">
+                <div class="footer__NameOrigin footer__touch-click">
+                    <div class="footer__NameOrigin--name">
+                        <i class="ti-angle-down footer__header-on--menu"></i>
+                        <i class="ti-angle-up footer__header-close--menu"></i>
+                        <H1>Lịch Sử Tên</H1>
+                    </div>
+                    <div class="footer__header-menu--item">
+                        <p class="footer__NameOrigin-content">Cái tên Bin Store được tạo ra rất ngẫu hứng,
+                            xuất phát từ “Chuỗi ngày u buồn về sự nghiệp,
+                            tương lai trong quá khứ của chính mình”,
+                            theo lời chia sẻ của Bá Sơn founder.</p>
+                    </div>
+                </div>
+                <div class="footer__addres footer__touch-click">
+                    <div class="footer__addre-name">
+                        <i class="ti-angle-down footer__header-on--menu"></i>
+                        <i class="ti-angle-up footer__header-close--menu"></i>
+                        <h1>Địa chỉ</h1>
+                    </div>
+                    <div class="footer__addres-item footer__header-menu--item">
+                        <h2>Sài gòn</h2>
+                        <p>43 Huỳnh Văn Bánh P.17 Q.Phú Nhuận 1041 Luỹ Bán Bích P.Tân Thành Q.Tân Phú</p>
+                        <h2>Điện Thoại</h2>
+                        <p class="footer__addres-NumberPhone">0986966745</p>
+                        <h2>Email</h2>
+                        <p class="footer__addres-email">Bason812004@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer__support footer__touch-click">
+                    <div class="footer__support-name">
+                        <i class="ti-angle-down footer__header-on--menu"></i>
+                        <i class="ti-angle-up footer__header-close--menu"></i>
+                        <h1>Hỗ Trợ Khách Hàng</h1>
+                    </div>
+                    <div class="footer__header-menu--item">
+                        <ul>
+                            <li>Giới thiệu Bin Store</li>
+                            <li>Hệ Thống Cửa Hàng</li>
+                            <li>Hướng Dẫn Đặt Hàng</li>
+                            <li>Chính Sách Và Quy Định</li>
+                            <li>Chính Sách Bảo Mật</li>
+                            <li>Thông tin sở hữu</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer__TakeCareOf footer__touch-click">
+                    <div class="footer__TakeCareOf-name">
+                        <i class="ti-angle-down footer__header-on--menu "></i>
+                        <i class="ti-angle-up footer__header-close--menu"></i>
+                        <h1>Chăm Sóc Khách Hàng</h1>
+                    </div>
+                    <div class="footer__header-menu--item">
+                        <div class="footer__contact-info">
+                            <i class="ti-headphone-alt"></i>
+                            <h2 class="footer__NumberPhone">0986966745</h2>
+                        </div>
+                        <h2 class="footer__email">Bason812004@gmail.com</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__SocialNetwork">
+                <p>Copyright © 2023 Bin Store VIETNAM. Powered by Bá Sơn entertaiment</p>
+                <div class="footer__SocialNetwork-icon">
+                    <i class="ti-facebook"></i>
+                    <i class="ti-instagram"></i>
+                    <i class="ti-youtube"></i>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../Js/main.js"></script>
+    <script src="../Js/hiengiohang.js"></script>
+    <script src="../Js/shownamelogin.js"></script>
+
+</body>
+
+</html>
